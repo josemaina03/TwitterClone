@@ -1,0 +1,12 @@
+<div *ngFor="let post of posts" class="post" (click)="postService.setCurrentPost(post.id)">
+    <div class="post-info">
+      <h3>{{ userName }}</h3>
+      <p>{{ post.body }}</p>
+      <div>
+        <span class="icon">💬 200</span>
+        <span class="icon">🔁 200</span>
+        <span class="icon">❤️ 200</span>
+      </div>
+    </div>
+  </div>
+  
